@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.inanclab.labtaksiproje.görünüm.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_feedFragment"
+            app:destination="@id/feedFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/feedFragment"
+        android:name="com.inanclab.labtaksiproje.görünüm.FeedFragment"
+        android:label="fragment_feed"
+        tools:layout="@layout/fragment_feed" >
+        <action
+            android:id="@+id/action_feedFragment_to_sonucBirFragment"
+            app:destination="@id/sonucBirFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_sonucIkiFragment"
+            app:destination="@id/sonucIkiFragment" />
+        <action
+            android:id="@+id/action_feedFragment_to_mapsFragment"
+            app:destination="@id/mapsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/sonucBirFragment"
+        android:name="com.inanclab.labtaksiproje.görünüm.SonucBirFragment"
+        android:label="fragment_sonuc_bir"
+        tools:layout="@layout/fragment_sonuc_bir" />
+    <fragment
+        android:id="@+id/sonucIkiFragment"
+        android:name="com.inanclab.labtaksiproje.görünüm.SonucIkiFragment"
+        android:label="fragment_sonuc_iki"
+        tools:layout="@layout/fragment_sonuc_iki" />
+    <fragment
+        android:id="@+id/mapsFragment"
+        android:name="com.inanclab.labtaksiproje.görünüm.MapsFragment"
+        android:label="fragment_maps"
+        tools:layout="@layout/fragment_maps" />
+</navigation>

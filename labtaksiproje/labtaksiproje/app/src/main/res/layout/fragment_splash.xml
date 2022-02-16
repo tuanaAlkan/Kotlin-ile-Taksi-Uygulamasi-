@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4F1D4"
+    tools:context=".görünüm.SplashFragment">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="500dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="#E4D232"
+        app:cardCornerRadius="150dp"
+        app:layout_constraintBottom_toTopOf="@+id/splashbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="sans-serif-medium"
+            android:outlineAmbientShadowColor="@color/black"
+            android:outlineSpotShadowColor="@color/black"
+            android:shadowColor="@color/black"
+            android:text="Taksi Verileri"
+            android:textColor="@color/white"
+            android:textSize="60sp"
+            android:textStyle="bold"></TextView>
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="456dp"
+            android:layout_height="212dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="250dp"
+            android:src="@drawable/taksi" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/splashbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="113dp"
+        android:backgroundTint="#FFEB3B"
+        android:text="ÖGRENMEYE BAŞLA"
+        android:textColor="#513813"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+    </Button>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
